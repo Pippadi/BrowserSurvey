@@ -12,9 +12,9 @@ with open("BrowserSurvey.csv", mode='r') as f:
         d["Browsers"] = row["Browsers"].split(";")
         for b in d["Browsers"]:
             b.strip()
-        d["Why"] = row["Why"].split(";")
-        d["Significance"] = row["Significance"]
-        d["Privacy"] = row["Privacy"]
+        #d["Why"] = row["Why"].split(";")
+        #d["Significance"] = row["Significance"]
+        #d["Privacy"] = row["Privacy"]
         data.append(d)
 
 browsers = {}

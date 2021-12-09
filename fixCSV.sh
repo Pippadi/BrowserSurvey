@@ -29,7 +29,7 @@ head -n 1 BrowserSurvey.csv > BrowserSurveySpam.csv
 rm $newFile
 
 while IFS= read -r line ; do
-	if echo $line | grep --quiet -iE 'shut|bee|bing|joe|CC Cleaner|gay|mom|shit|idk|sois|nut' ; then
+	if echo $line | grep --quiet -iE 'funny|dad|browser |shut|bee|bing|joe|CC Cleaner|gay|mom|shit|idk|sois|nut' ; then
 		echo $line >> BrowserSurveySpam.csv
 	else
 		echo $line >> $newFile
